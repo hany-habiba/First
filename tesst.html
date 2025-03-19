@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="test.css">
+  <title>Calmora: Mental Health</title>
+  
+</head>
+
+<body>
+
+  
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home" id="nav-home">Home</a></li>
+      <li><a href="index.html" id="nav-psychological">Psychological assessments</a></li>
+      <li><a href="index2.html" id="nav-articles">Articles</a></li>
+      <li><a href="#self-help" id="nav-self-help">Self-Help</a></li>
+      <li><a href="index3.html" id="nav-test">Test</a></li>
+      <li><a href="#about" id="nav-about">About Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header id="home">
+    <!-- Language Switcher -->
+  <div class="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ar')">عربي</button>
+  </div>
+    <div class="header-content">
+      <h1 id="header-title">Calmora: Mental Health</h1>
+      <p id="header-subtitle">Empowering you to lead a mentally healthy life.</p>
+      <button class="cta-btn" id="open">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Modal Section -->
+  <div class="modal-container" id="modal">
+    <div class="modal">
+      <button class="close-btn" id="close">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h3 id="modal-title">Sign Up</h3>
+      </div>
+      <div class="modal-content">
+        <p id="modal-text">Register with us to get offers, support and more</p>
+        <form class="modal-form">
+          <div>
+            <label for="name" id="label-name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" class="form-input" />
+          </div>
+          <div>
+            <label for="email" id="label-email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" class="form-input" />
+          </div>
+          <div>
+            <label for="password" id="label-password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" class="form-input" />
+          </div>
+          <div>
+            <label for="password2" id="label-password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm Password" class="form-input" />
+          </div>
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mental Health Section -->
+  <section class="section" id="mental-health">
+    <div class="container">
+      <h2 class="first1" id="mental-health-title">Mental Health</h2>
+      <p class="first" id="mental-health-text">Mental health and emotional well-being are essential aspects of overall health...</p>
+    </div>
+    <div class="content-grid">
+      <div class="card">
+        <img src="ph.webp" alt="Assessment">
+        <div class="card-content">
+          <h3 id="card1-title">Psychological Assessments</h3>
+          <p id="card1-text">Evaluate your mental health status with comprehensive psychological assessments.</p>
+          <p id="card1-link"><a id="card1-link" href="https://www.apa.org/topics/testing-assessment-measurement/understanding">Know more</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ph1.webp" alt="Therapy">
+        <div class="card-content">
+          <h3 id="card2-title">Therapy & Counseling</h3>
+          <p id="card2-text">Connect with certified therapists for personalized mental health support.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ph3.webp" alt="Programs">
+        <div class="card-content">
+          <h3 id="card3-title">Mental Wellness Programs</h3>
+          <p id="card3-text">Participate in wellness programs to improve emotional and psychological resilience.</p>
+        </div>
+      </div>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="left">
+     <p id="website"><a  id="website" href=" https://hany-habiba.github.io/Calmora2/">If you want help ,Vist our website</a></p> 
+      <p id="Hint">"We are here for you"</p>
+      <p>&copy; 2025 Calmora. All Rights Reserved.</p>
+    </div>
+    <div class="right">
+      <p id="footer-contact">Contact us: info@calmora.com | Phone: +20 123 456 7890</p>
+      <p id="footer-address">Address: 123 Calmora Street, Tanta, Egypt</p>
+    </div>
+  </footer>
+
+  <script src="testt.js"></script>
+  
+</body>
+
+</html>

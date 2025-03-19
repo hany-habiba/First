@@ -1,0 +1,270 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #a4b3b0;
+  --text-color: #F5F5F5;
+  --button-color: #6714ac;
+  --bg-color: #ECF0F1;
+  --border-color: #BDC3C7;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  justify-content: space-between;
+  align-items: left;
+  display: flex;
+  width: 100%
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 180px;
+
+}
+
+nav ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 40px;
+  text-align: center;
+  background-image: url('ph4.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.header-content {
+  background-color: #000000;
+  opacity: 0.7;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.language-switcher {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: rgb(17, 133, 179);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.language-switcher.arabic {
+  right: auto;
+  left: 20px;
+  right: 100%;
+}
+
+.language-switcher button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.arabic {
+  direction: rtl;
+  text-align: right;
+}
+
+body.arabic {
+  direction: rtl;
+}
+
+.container {
+  padding: 20px;
+}
+.content-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 200px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.card-content {
+  flex: 1;
+
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #1175b3;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+.cta-btn {
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  background-color: black;
+  opacity: .8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--shadow-color);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header {
+  background: white;
+  color: var(--clear-color);
+  padding: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-content p {
+  background-color: #000000;
+  font-size: 20px;
+  color: #ECF0F1;
+  border-radius: 10px;
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+
+}
+
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.submit-btn {
+  font-size: 17px;
+}
+
+.submit-btn:hover {
+  background-color: #e48921;
+
+}
+#website{
+  color:#F5F5F5;
+}
+a {
+  direction: ltr;
+  unicode-bidi: embed;
+
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+  display: fixed;
+  justify-content: space-between;
+  text-align: center;
+  height: 20vh;
+}
+.footer a {
+  direction: ltr;
+  unicode-bidi: embed;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footer .left,
+.footer .right {
+  width: 100%;
+  position: relative;
+}
+
+
+.footer .left {
+  text-align: left;
+}
+
+.footer .right {
+  text-align: right;
+}

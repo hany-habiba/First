@@ -1,0 +1,238 @@
+/* @import url("https://fonts.googleapis.com/css?family=Lato&display=swap"); */
+
+:root {
+  --modal-duration: 1s;
+  --primary-color: #111112;
+  --secondary-color: #518676;
+  --border-color: rgba(200, 255, 200, 0.1);
+  --clear-color: #ebebec;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --overlay-color: rgba(0, 0, 0, 0.6);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    transition: transform 0.3s ease;
+  }
+  body.show-nav {
+    transform: translateX(200px); 
+  }
+  
+  nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid var(--border-color);
+    color: var(--clear-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    z-index: 100;
+    transform: translateX(-100%);
+  }
+  
+  nav .logo {
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  nav .logo img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    border-bottom: 2px solid var(--border-color);
+    padding: 20px;
+  }
+  
+  nav ul li:first-of-type {
+    border-top: 2px solid var(--border-color);
+  }
+  
+  nav ul li a {
+    color: var(--clear-color);
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    margin: 30px 0;
+  }
+  .toggle {
+    display: block;
+    cursor: pointer;
+    background-color: var(--shadow-color);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  
+  span {
+    height: 3px;
+    width: 100%;
+    background-color: wheat;
+    border-radius: 5px;
+  }
+  
+  
+  .modal-container {
+    background-color: var(--overlay-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .modal-container.show-modal {
+    display: block;
+  }
+  
+  .Home{
+    height: 100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .Home-content {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .Home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .Home p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-box input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #2d89ff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-box button:hover {
+    background-color: #1a5cb0;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .feature {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

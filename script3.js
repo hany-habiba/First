@@ -157,13 +157,13 @@ function showResults() {
 
   if (percentage >= 70) {
       resultMessage = `<h3>-You are experiencing a high level of psychological distress. Score: ${percentage.toFixed(2)}%</h3>`;
-      resultMessage += `<p><a href=" https://hany-habiba.github.io/Calmora2/" target="_blank">If you want soultion, Visit our website:Calmora</a></p>`;
+      resultMessage += `<p><a href="  https://hany-habiba.github.io/First/" target="_blank">If you want soultion, Visit our website:Calmora</a></p>`;
   } else if (percentage >= 40) {
       resultMessage = `<h3>-You may be experiencing moderate mental health issues. Score: ${percentage.toFixed(2)}%`;
-      resultMessage += `<p><a href=" https://hany-habiba.github.io/Calmora2/" target="_blank">If you want soultion, Visit our website:Calmora</a></p>`;
+      resultMessage += `<p><a href="  https://hany-habiba.github.io/First/" target="_blank">If you want soultion, Visit our website:Calmora</a></p>`;
   } else {
       resultMessage = `<h3>-You have low signs of psychological distress. Score: ${percentage.toFixed(2)}%</h3>`;
-      resultMessage += `<p><a href=" https://hany-habiba.github.io/Calmora2/" target="_blank">If you want soultion, Visit our website:Calmora</a></p>`;
+      resultMessage += `<p><a href="  https://hany-habiba.github.io/First/" target="_blank">If you want soultion, Visit our website:Calmora</a></p>`;
   }
 
   resultsElement.innerHTML = `<h3>Test Results:</h3><p>${resultMessage}</p>`;
